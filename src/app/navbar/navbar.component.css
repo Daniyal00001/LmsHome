@@ -1,0 +1,84 @@
+/* Sticky navbar with shadow */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    /* keeps it above page content */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+}
+
+/* Main Title: GCU L.M.S */
+.gcu-title .main-title {
+    color: #002147;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Subtext: [Student Panel] */
+.gcu-title .student-panel {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 0.1rem;
+}
+
+/* Version: V03.05.12 */
+.gcu-title .version {
+    color: #adb5bd;
+    font-size: 0.75rem;
+    margin-top: 0.1rem;
+}
+
+/* Logo in brand */
+.navbar-brand img {
+    border-radius: 4px;
+}
+
+/* Right-side icons */
+.navbar .btn-link {
+    color: #002147;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .btn-link:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Pipe separator */
+.navbar .mx-1 {
+    color: #adb5bd;
+    font-weight: 400;
+}
+.div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* Optional: notification dot on bell */
+.navbar .btn-link.position-relative .bi-bell::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    /* background-color: red; */
+    border-radius: 50%;
+}
+
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 991.98px) {
+    .gcu-title .main-title {
+        font-size: 0.9rem;
+    }
+
+    .gcu-title .student-panel {
+        font-size: 0.8rem;
+    }
+
+    .gcu-title .version {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,52 @@
+<nav class="navbar shadow-sm navbar-expand-lg navbar-light bg-white shadow-sm px-3 py-2 sticky-navbar custom-navbar">
+    <div class="container-fluid">
+        <!-- Left: Burger -->
+        <button 
+        class="navbar-toggler me-2" 
+        type="button" 
+        aria-label="Toggle sidebar"
+        onclick="toggleSidebar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+
+        <!-- Logo & Title (visible only on large screens) -->
+        <a class="navbar-brand d-none d-lg-flex flex-column gcu-title" href="#">
+            <div class="d-flex align-items-center">
+                <img src="../../assets/gclogo-removebg-preview.png" alt="GCU Logo" style="height:30px;" class="me-2">
+                <div class="div">
+                    <span class="main-title">GCU L.M.S</span><span class="student-panel">[Student Panel]</span>
+                    <small class="version">V03.05.12</small>
+                </div>
+               
+            </div>
+      
+        </a>
+
+        <!-- Right side: Notification + Profile -->
+        <div class="d-flex align-items-center ms-auto">
+            <!-- Bell -->
+            <button class="btn btn-link position-relative me-1 nav-icon">
+                <i class="bi bi-bell fs-4"></i>
+            </button>
+
+            <!-- Pipe -->
+            <span class="mx-1 text-muted fw-bold">|</span>
+
+            <!-- Profile -->
+            <button class="btn btn-link ms-1 nav-icon">
+                <i class="bi bi-person-circle fs-4"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+  
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('collapsed');
+    }
+</script>
+    

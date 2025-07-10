@@ -1,0 +1,12 @@
+<div class="card shadow-sm p-3 mt-4">
+    <div class="bg-primary text-white px-3 py-2 rounded-top fw-bold text-center">
+        ANNOUNCEMENTS
+    </div>
+
+    <div class="mt-3">
+        <div *ngFor="let announcement of announcements" class="announcement-item p-2 mb-2 shadow-sm rounded bg-light">
+            {{ announcement }}
+        </div>
+    </div>
+</div>
+  

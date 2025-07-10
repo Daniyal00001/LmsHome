@@ -1,0 +1,36 @@
+.hey{
+    background-color: #002147;
+        border-radius: 12px 12px 0 0;
+        height: 60px;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center
+}
+
+.present-badge {
+    background-color: #1579D1;
+}
+
+.absent-badge {
+    background-color: #003972;
+}
+
+.leave-badge {
+    background-color: #78C2FF;
+}
+
+@media (max-width: 767.98px) {
+    .mobile-mt {
+        margin-top: 1rem;
+        /* or use 20px, adjust as needed */
+    }
+
+    .dd{
+        display: none;
+    }
+}

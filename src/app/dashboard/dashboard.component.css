@@ -1,0 +1,32 @@
+
+.dashboard-card {
+    height: 100%;
+    /* make cards equal height */
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card .colour {
+    color: #002147;
+}
+
+.dashboard-card i {
+    color: #002147;
+}
+
+.dashboard-card .text-muted {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+.dashboard-tagline {
+    color: #6c757d;
+    /* subtle grey */
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}

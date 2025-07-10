@@ -1,0 +1,26 @@
+<div class="card custom-card shadow-sm p-3">
+    <div class="header text-white px-3 py-2 rounded-top fw-bold">
+        CURRENT COURSES
+    </div>
+
+    <div class="table-responsive mt-2">
+        <table class="table custom-table table-borderless align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>COURSE NAME</th>
+                    <th>TEACHER NAME</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let course of courses" class="course-row">
+                    <td class="course-cell">
+                        <div class="fw-semibold">{{ course.name }}</div>
+                        <small class="text-muted">{{ course.code }}</small>
+                    </td>
+                    <td class="teacher-cell text-primary">{{ course.teacher }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+  

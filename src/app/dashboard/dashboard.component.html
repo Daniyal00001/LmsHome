@@ -1,0 +1,25 @@
+<div class="text-center my-4">
+    <h2 class="fw-bold colour mb-1">Welcome to Dashboard</h2>
+    <div class="dashboard-underline mx-auto"></div>
+    <p class="dashboard-tagline mt-2">Your learning, summarized.</p>
+</div>
+
+
+<div class="row g-3 mr-3 mb-5">
+    <div class=" hey col-lg-3 col-md-6 col-12" *ngFor="let card of cards">
+        <div class="card shadow-lg py-3 px-3 d-flex flex-row align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <i [class]="card.icon + ' text-primary fs-2 me-2'"></i>
+                <div>
+                    <h6 class="mb-0">{{ card.title }}</h6>
+                    <small class="text-muted">{{ card.subtitle }}</small>
+                </div>
+            </div>
+            <div class="fw-bold fs-5 text-dark">
+                {{ card.value }}
+            </div>
+        </div>
+    </div>
+</div>
+  
+  
