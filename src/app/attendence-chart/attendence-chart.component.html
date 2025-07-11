@@ -1,25 +1,36 @@
-<div class="card shadow-sm p-3 mobile-mt ">
+<div class="card shadow-sm p-3 mobile-mt">
+    <!-- Header -->
     <div class="hey text-white px-3 py-2 rounded-top fw-bold">
         ATTENDANCE
     </div>
 
+    <!-- Chart -->
     <div class="d-flex justify-content-center align-items-center mt-3 oo"
         *ngIf="chartOptions?.series && chartOptions?.chart">
-        <apx-chart #chart [series]="chartOptions.series" [chart]="chartOptions.chart" [labels]="chartOptions.labels"
-            [responsive]="chartOptions.responsive" [legend]="chartOptions.legend" [dataLabels]="chartOptions.dataLabels"
-            [colors]="chartOptions.colors" [fill]="chartOptions.fill" class="w-100" style="max-width:350px;">
+        <apx-chart #chart
+            [series]="chartOptions.series"
+            [chart]="chartOptions.chart"
+            [labels]="chartOptions.labels"
+            [responsive]="chartOptions.responsive"
+            [legend]="chartOptions.legend"
+            [dataLabels]="chartOptions.dataLabels"
+            [colors]="chartOptions.colors"
+            [fill]="chartOptions.fill"
+            class="w-100"
+            style="max-width: 350px;">
         </apx-chart>
     </div>
 
-    <div class="text-center mt-3 dd">
-        <span class="me-2">
-            <span class="badge present-badge">&nbsp;</span> Present
+    <!-- Badge Legends -->
+    <div class="text-center mt-4 dd legend-labels">
+        <span class="me-3">
+            <span class="badge present-badge"></span> Present
         </span>
-        <span class="me-2">
-            <span class="badge absent-badge">&nbsp;</span> Absent
+        <span class="me-3">
+            <span class="badge absent-badge"></span> Absent
         </span>
         <span>
-            <span class="badge leave-badge">&nbsp;</span> Leave
+            <span class="badge leave-badge"></span> Leave
         </span>
     </div>
 </div>

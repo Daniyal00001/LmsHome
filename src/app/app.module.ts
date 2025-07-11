@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CurrentcoursesComponent } from './currentcourses/currentcourses.component';
 import { AttendanceChartComponent } from './attendence-chart/attendence-chart.component';
 import { AnnouncementComponent } from './announcement/announcement.component';
+import { TimetableComponent } from './timetable/timetable.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AnnouncementComponent } from './announcement/announcement.component';
     DashboardComponent,
     CurrentcoursesComponent,
     AttendanceChartComponent,
-    AnnouncementComponent
+    AnnouncementComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@
 }
 
 .card .bg-primary {
-    background-color: #002147 !important;
+    background-color: #0C0052 !important;
     font-size: 1.63rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
 /* Announcement container */
 .announcement-item {
     background-color: #f8f9fa;
-    border-left: 4px solid #002147;
+    border-left: 4px solid #0C0052;
     padding: 0.75rem 1rem;
     font-size: 0.95rem;
     color: #333;
@@ -45,7 +45,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.1rem;
-    color: #002147;
+    color: #0C0052;
 }
 
 /* Responsive tweaks */

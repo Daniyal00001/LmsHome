@@ -1,32 +1,48 @@
-
 .dashboard-card {
-    height: 100%;
-    /* make cards equal height */
-    padding: 1rem;
-    border: 1px solid #e9ecef;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 12%;
+    padding: 1.25rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00005c, #5b0007);
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .dashboard-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.dashboard-card .colour {
-    color: #002147;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 .dashboard-card i {
-    color: #002147;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.dashboard-card .text-muted {
-    font-size: 0.85rem;
-    color: #6c757d;
+.dashboard-card .colour {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
 }
+
 .dashboard-tagline {
-    color: #6c757d;
-    /* subtle grey */
+    color: rgba(255, 255, 255, 0.85);
     font-size: 0.95rem;
     margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Optional: Orange accent underline */
+.dashboard-underline {
+    width: 50px;
+    height: 3px;
+    background: #f0ad4e;
+    border-radius: 2px;
+    margin-top: 0.2rem;
 }

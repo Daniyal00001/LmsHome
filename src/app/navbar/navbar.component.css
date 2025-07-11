@@ -1,77 +1,113 @@
-/* Sticky navbar with shadow */
+/* === Sticky Navbar: Flat Dark with Clear Icons === */
 .sticky-navbar {
     position: sticky;
     top: 0;
     z-index: 1030;
-    /* keeps it above page content */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    background-color: #fff;
+    background-color: #0a0a2a; /* Deep navy */
+    color: #ffffff;
+    padding: 0.65rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Main Title: GCU L.M.S */
-.gcu-title .main-title {
-    color: #002147;
-    font-size: 1rem;
-    font-weight: 600;
+/* === Brand Section === */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
-/* Subtext: [Student Panel] */
-.gcu-title .student-panel {
-    color: #6c757d;
-    font-size: 0.85rem;
-    margin-top: 0.1rem;
-}
-
-/* Version: V03.05.12 */
-.gcu-title .version {
-    color: #adb5bd;
-    font-size: 0.75rem;
-    margin-top: 0.1rem;
-}
-
-/* Logo in brand */
 .navbar-brand img {
-    border-radius: 4px;
+    height: 42px;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
-/* Right-side icons */
+/* === Titles === */
+.gcu-title .main-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.gcu-title .student-panel {
+    font-size: 0.85rem;
+    color: #090054;
+    margin-top: 0.1rem;
+}
+
+.gcu-title .version {
+    font-size: 0.75rem;
+    color: #0a0a2a;
+    margin-top: 0.1rem;
+}
+
+/* === Icon Section === */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .navbar .btn-link {
-    color: #002147;
-    transition: color 0.2s ease, transform 0.2s ease;
+    color: #090054; /* Soft sky blue for visibility */
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    padding: 6px;
+    border-radius: 8px;
 }
 
 .navbar .btn-link:hover {
-    color: #0056b3;
-    transform: scale(1.1);
+    color: #f0ad4e; /* Golden hover */
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: scale(1.15);
+    box-shadow: 0 0 8px rgba(240, 173, 78, 0.3);
 }
 
-/* Pipe separator */
-.navbar .mx-1 {
-    color: #adb5bd;
-    font-weight: 400;
-}
-.div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-/* Optional: notification dot on bell */
+/* === Notification Red Dot === */
 .navbar .btn-link.position-relative .bi-bell::after {
     content: '';
     position: absolute;
     top: 4px;
     right: 4px;
-    width: 6px;
-    height: 6px;
-    /* background-color: red; */
+    width: 8px;
+    height: 8px;
+    background-color: #f44336;
     border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
+/* Pipe Separator */
+.navbar .mx-1 {
+    color: #949aa7;
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 1rem;
+}
 
-/* Responsive tweaks for smaller screens */
+/* Hover Underline Effect */
+.navbar .btn-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: #f0ad4e;
+    border-radius: 50px;
+}
+
+/* === Responsive Adjustments === */
 @media (max-width: 991.98px) {
     .gcu-title .main-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .gcu-title .student-panel {
@@ -80,5 +116,9 @@
 
     .gcu-title .version {
         font-size: 0.7rem;
+    }
+
+    .navbar-icons {
+        gap: 14px;
     }
 }

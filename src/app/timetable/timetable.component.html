@@ -1,0 +1,39 @@
+<div class="timetable-wrapper">
+  <!-- Gradient Header -->
+  <div class="timetable-header">
+    <h2>Academic Timetable</h2>
+    <div class="date-range">
+      <button>&lt;</button>
+      <span>Jul 7 - Jul 11, 2025</span>
+      <button>&gt;</button>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><span class="dot lab"></span>Lab</div>
+    <div class="legend-item"><span class="dot lecture"></span>Lecture</div>
+    <div class="legend-item"><span class="dot seminar"></span>Seminar</div>
+    <div class="legend-item"><span class="dot tutorial"></span>Tutorial</div>
+  </div>
+
+  <!-- Daily Schedule Blocks -->
+  <div class="day" *ngFor="let day of timetable">
+    <div class="day-header" (click)="toggleDay(day)">
+      <strong>{{ day.day }}</strong>
+      <span>{{ day.date }}</span>
+      <span class="badge">{{ day.classes.length }} classes</span>
+    </div>
+
+    <div class="classes" *ngIf="day.expanded">
+      <div class="class-card" *ngFor="let cls of day.classes" [ngClass]="cls.type">
+        <div class="class-title">{{ cls.subject }}</div>
+        <div class="class-type">{{ cls.type }}</div>
+        <div class="class-time">🕒 {{ cls.time }} &nbsp; • &nbsp; {{ cls.duration }} duration</div>
+        <div class="class-info">
+          👨‍🏫 {{ cls.teacher }} &nbsp;&nbsp;&nbsp;📍 {{ cls.location }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
